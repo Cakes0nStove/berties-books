@@ -7,7 +7,7 @@ router.get('/register', function (req, res, next) {
 })
 
 router.post('/registered', function (req, res, next) {
-    // saving data in database
+    // asving data in database
     res.send(' Hello '+ req.body.first + ' '+ req.body.last +' you are now registered!  We will send an email to you at ' + req.body.email);                                                                              
 }); 
 
