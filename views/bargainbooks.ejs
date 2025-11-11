@@ -5,8 +5,8 @@
     <link rel="stylesheet"  type="text/css" href="/main.css" />
   </head>
   <body>
-    <h1>About <%=shopData.shopName%></h1>
-    <h1>Here are the books that we sell:</h1>
+    <h1>Cheap <%=shopData.shopName%> under £20:</h1>
+    <h1>Cheap Books:</h1>
     <ul>
       <% if (availableBooks && availableBooks.length > 0) { %>
         <% availableBooks.forEach(book => { %>
