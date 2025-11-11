@@ -24,7 +24,7 @@ const db = mysql.createPool({
     host: 'localhost',
     user: 'berties_books_app',
     password: 'qwertyuiop',
-    database: 'myBookshop',
+    database: 'berties_books',
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
