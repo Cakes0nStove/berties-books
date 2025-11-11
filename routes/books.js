@@ -34,6 +34,15 @@ router.post('/bookadded', function (req, res, next) {
             res.send(' This book is added to database, name: '+ req.body.name + ' price '+ req.body.price)
     })
 }) 
-
+router.get('/bargainbooks', function(req, res, next) {
+    let sqlquery = "SELECT * FROM books"; // query database to get all the books
+    // execute sql query
+    db.query(sqlquery, (err, result) => {
+        if (err) {
+            next(err)
+        }
+        res.render("list.ejs", {availableBooks:result})
+        });
+});
 // Export the router object so index.js can access it
 module.exports = router
